@@ -84,3 +84,6 @@ console.log(bigNum([Infinity, null, 888, 'sads', true]), '->', 888);
 console.log(bigNum([888, Infinity, null, 'sads', true]), '->', 888);
 
 console.log(bigNum(['888', Infinity, null, 'sads', true]));
+
+// recursion
+console.log(bigNum([-5, 78, [14, 999], 0, 18]), '->', 999);
