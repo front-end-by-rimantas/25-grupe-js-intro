@@ -213,3 +213,22 @@ const dictionary2 = ['Labas', 'rytas', 'Lietuva', 'sakau', 'tau'];
 const short = dictionary2.reduce((total, word) => total + word[0], '');
 
 console.log(short);
+
+/***************************************************/
+
+console.clear();
+
+const sortAbc = ['a', 'ä', 'c', 'fabrikas', 'fancy', 'baklazanas', 'Bermudai', 'd', 'Antanas']
+const sortedAbc = sortAbc.sort();
+console.log(sortedAbc);
+
+const sortList = [1, -5, 78, 2, 11, -14, 0, -3];
+// console.log(sortList.sort());
+// const sortedNumber = sortList.sort((a, b) => a - b ? -1 : 1);
+// const sortedNumber = sortList.sort((a, b) => a > b ? -1 : 1);
+// const sortedNumber = sortList.sort((a, b) => a - b);
+const sortedNumber = [...sortList].sort((a, b) => b - a);
+
+console.log(sortedNumber);
+console.log(sortList);
+
